@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Мобильное приложение "Pink"</title>
+  </head>
+  <body>
+    <header class="page-header">
+        <a class="page-header__logo" href="index.html">
+          <img src="https://via.placeholder.com/150x150" width="75" height="22" alt="Pink">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="site-list__item">
+                    <a href="#">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                    <a>Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                    <a href="https://htmlacademy.ru/study">HTML Academy</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="page-main">
+        <h1 class="page-main__name">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <section class="giveaway">
+          <h2 class="visually-hidden">Конкурс</h2>
+          <p class="giveaway__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+          <form class="form">
+              <fieldset class="user-data">
+                  <legend class="visually-hidden"> Данные пользователя</legend>
+                        <label class="user-data__information" for="surname">Фамилия</label>
+                        <input class="user-data__form" id="surname" type="text" name="name" placeholder="Укажите фамилию *" required>
+                        <label class="user-data__information" for="name">Имя</label>
+                        <input class="user-data__form" id="name" type="text" name="name" placeholder="Введите ваше имя *" required>
+                        <label class="user-data__information" for="second-name">Отчество</label>
+                        <input class="user-data__form" id="second-name" type="text" name="name" placeholder="Ну и отчество тоже">
+              </fieldset>
+              <fieldset class="progress">
+                  <legend class="progress__name">Ваши безбашенные достижения в путешествии</legend>
+                  <ul class="progress__list">
+                    <li>
+                      <input class="progress__checkbox" type="checkbox" name="progress" id="progress-shark" checked>
+                      <label class="progress__situation" for="progress-shark">Сделал селфи с акулой</label>
+                    </li>
+                    <li>
+                      <input class="progress__checkbox" type="checkbox" name="progress" id="progress-burn" checked>
+                      <label class="progress__situation" for="progress-burn">Обгорел на пляже</label>
+                    </li>
+                    <li>
+                        <input class="progress__checkbox" type="checkbox" name="progress" id="progress-chuck">
+                        <label class="progress__situation" for="progress-chuck">Видел Чака Норриса</label>
+                    </li>
+                    <li>
+                        <input class="progress__checkbox" type="checkbox" name="progress" id="progress-souvenirs">
+                        <label class="progress__situation" for="progress-souvenirs">Накупил сувениров</label>
+                    </li>
+                    <li>
+                        <input class="progress__checkbox" type="checkbox" name="progress" id="progress-tower" checked>
+                        <label class="progress__situation" for="progress-tower">Удержал башню</label>
+                    </li>
+                    <li>
+                        <input class="progress__checkbox" type="checkbox" name="progress" id="progress-hotel">
+                        <label class="progress__situation" for="progress-hotel">Разгромил отель</label>
+                    </li>
+                  </ul>
+              </fieldset>
+              <fieldset class="user-contacts">
+                  <legend class="visually-hidden">Контакты пользователя</legend>
+                      <label class="user-contacts__information" for="user-telephone">Номер телефона</label>
+                      <input class="user-contacts__form" id="user-telephone" type="number" name="telephone" placeholder="Номер, пожалуйста">
+                      <label class="user-contacts__information" for="user-email">Адрес почты</label>
+                      <input class="user-contacts__form" id="user-email" type="text" name="name" placeholder="Введите почту *" required>
+              </fieldset>
+              <fieldset class="app">
+                  <legend class="app__head">С каким приложением путешествовали?</legend>
+                      <ul class="app__list">
+                        <li>
+                           <input class="app__radio" type="radio" name="app" value="Pink для iOS" checked>
+                           <label class="app__name">Pink для iOS</label>
+                        </li>
+                        <li>
+                           <input class="app__radio" type="radio" name="app" value="Pink на Android">
+                           <label class="app__name">Pink на Android</label>
+                        </li>
+                        <li>
+                            <input class="app__radio" type="radio" name="app" value="Pink на Android">
+                            <label class="app__name">Windows Phone</label>
+                         </li>
+                      </ul>
+              </fieldset>
+              <fieldset class="impression">
+                  <legend class="impression__head">Опишите свои эмоции</legend>
+                  <textarea name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
+              </fieldset>
+              <p class="form__necessarily">* — обязательные поля</p>
+              <button class="form__button" type="submit">Отправить форму</button>
+          </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <a class="footer__logo" href="index.html">
+            <img src="https://via.placeholder.com/150x150" width="147" height="40" alt="Pink-logo">
+        </a>
+        <ul class="footer__icon">
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://youtube.com/">Youtube</a></li>
+        </ul>
+        <p class="footer__developer">Разработано <a href="https://htmlacademy.ru/intensive/adaptive"></a></p>
+    </footer>
+  </body>
+</html>
