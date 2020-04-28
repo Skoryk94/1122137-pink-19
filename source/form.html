@@ -46,16 +46,16 @@
         <h1 class="visually-hidden">Конкурс</h1>
         <section class="giveaway">
           <h2 class="giveaway__name">Конкурс на самое безбашенное путешествие с Пинк</h2>
-          <p class="giveaway__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+          <p class="giveaway__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
           <form class="form" method="GET" action="https://echo.htmlacademy.ru">
               <fieldset class="user-data">
                   <legend class="visually-hidden"> Данные пользователя</legend>
                         <label class="user-data__information" for="surname">Фамилия</label>
-                        <input class="user-data__form fields" id="surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
+                        <input class="user-data__form user-data__fields" id="surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
                         <label class="user-data__information" for="name-name">Имя</label>
-                        <input class="user-data__form fields" id="name-name" type="text" name="name-name" placeholder="Введите ваше имя *" required>
+                        <input class="user-data__form user-data__fields" id="name-name" type="text" name="name-name" placeholder="Введите ваше имя *" required>
                         <label class="user-data__information" for="second-name">Отчество</label>
-                        <input class="user-data__form fields" id="second-name" type="text" name="name" placeholder="Ну и отчество тоже">
+                        <input class="user-data__form user-data__fields" id="second-name" type="text" name="name" placeholder="Ну и отчество тоже">
               </fieldset>
               <fieldset class="progress">
                   <legend class="progress__name">Ваши безбашенные достижения в путешествии</legend>
@@ -89,9 +89,9 @@
               <fieldset class="user-contacts">
                   <legend class="visually-hidden">Контакты пользователя</legend>
                       <label class="user-contacts__information" for="user-telephone">Номер телефона</label>
-                      <input class="user-contacts__form" id="user-telephone" type="number" name="user-telephone" placeholder="Номер, пожалуйста">
+                      <input class="user-contacts__form user-contacts__fields" id="user-telephone" type="number" name="user-telephone" placeholder="Номер, пожалуйста">
                       <label class="user-contacts__information" for="user-email">Адрес почты</label>
-                      <input class="user-contacts__form" id="user-email" type="text" name="user-email" placeholder="Введите почту *" required>
+                      <input class="user-contacts__form user-contacts__fields" id="user-email" type="text" name="user-email" placeholder="Введите почту *" required>
               </fieldset>
               <fieldset class="app">
                   <legend class="app__head">С каким приложением путешествовали?</legend>
@@ -112,10 +112,10 @@
               </fieldset>
               <fieldset class="impression">
                   <legend class="impression__head">Опишите свои эмоции</legend>
-                  <textarea class="textarea" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
+                  <textarea class="impression__textarea" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
               </fieldset>
-              <p class="form__necessarily">* — обязательные поля</p>
               <button class="form__button" type="submit">Отправить форму</button>
+              <p class="form__necessarily-pink">* — обязательные поля</p>
           </form>
         </section>
     </main>
