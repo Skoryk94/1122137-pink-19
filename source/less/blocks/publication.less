@@ -9,12 +9,17 @@
 .publication__functions {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 60px;
+  align-items: center;
 }
 
 .publication__icon {
   background: none;
   box-shadow: none;
   border: none;
+  display: flex;
 }
 
 .publication__icon svg {
@@ -22,7 +27,7 @@
   opacity: 0.3;
 }
 
-.publication__icon svg:hover {
+.publication__icon:hover svg {
   opacity: 0.5;
 }
 
@@ -45,6 +50,7 @@
   border: solid 3px #d22856;
   color: #d22856;
   margin-bottom: 12px;
+  margin-top: 60px;
 }
 
 .publication__button-pink:hover {
@@ -72,4 +78,10 @@
   color: white;
   background-color: #283645;
   opacity: 0.3;
+}
+
+.publication__input {
+  width: 240px;
+  position: absolute;
+  transform: translate(-55px, 30px);
 }
