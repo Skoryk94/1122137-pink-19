@@ -14,6 +14,39 @@
   text-align: center;
 }
 
+@media (min-width: @desktop-width) {
+  .gallery__description {
+    font-size: 18px;
+    padding-top: 100px;
+    padding-bottom: 92px;
+    margin: 0;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    margin-right: 130px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__description {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    margin: 0;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 .gallery__likes-amount {
   font-size: 12px;
   line-height: 24px;

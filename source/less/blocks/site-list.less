@@ -1,3 +1,9 @@
+@media (min-width: @tablet-width) {
+  .site-list {
+    width: 660px;
+  }
+}
+
 .site-list__item {
   text-transform: uppercase;
   font-size: 18px;
@@ -14,6 +20,15 @@
 
 .site-list__link:hover {
   color: #d22856;
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    line-height: 18px;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 .site-list__item--active {

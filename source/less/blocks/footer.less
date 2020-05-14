@@ -3,6 +3,30 @@
   padding-bottom: 40px;
 }
 
+@media (min-width: @desktop-width) {
+  .footer {
+    padding: 0;
+    height: 197px;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 130px;
+    align-items: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    padding: 0;
+    height: 127px;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 .footer__youtube,
 .footer__twitter,
 .footer__facebook {
