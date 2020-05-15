@@ -3,28 +3,29 @@
   width: 100%;
 }
 
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 109px;
+    align-items: center;
+    display: flex;
+  }
+
+  .page-header__logo {
+    margin-left: 20px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .page-header {
     height: 110px;
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     width: 100%;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .page-header {
-    height: 109px;
+    align-items: center;
+    display: flex;
   }
 
-  .page-header__logo-image {
-    padding-top: 27px;
-  }
-}
-
-@media (min-width: @desktop-width) {
   .page-header__logo {
     margin-left: 130px;
-    display: flex;
   }
 }

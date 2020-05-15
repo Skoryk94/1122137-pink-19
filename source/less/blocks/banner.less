@@ -63,6 +63,45 @@
   padding-right: 58px;
 }
 
+@media (min-width: @tablet-width) {
+  .banner {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 729px;
+    padding-top: 103px;
+    flex-direction: column;
+  }
+
+  .banner__head {
+    font-size: 40px;
+    line-height: normal;
+    margin-left: 58px;
+    width: 200px;
+  }
+
+  .banner__image {
+    position: absolute;
+    align-self: flex-end;
+    right: 90px;
+  }
+
+  .banner__applications {
+    height: 250px;
+    width: 300px;
+    background-color: transparent;
+  }
+
+  .banner__applications-list {
+    padding-top: 46px;
+    padding-left: 66px;
+  }
+
+  .banner__container {
+    padding-left: 20px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .banner {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -77,13 +116,18 @@
     font-size: 50px;
     width: 240px;
     line-height: normal;
-    margin-left: 166px;
+    margin-left: 36px;
     text-align: center;
+  }
+
+  .banner__container {
+    max-width: 960px;
+    margin-left: 130px;
   }
 
   .banner__image {
     position: absolute;
-    align-self: flex-end;
+    right: 95px;
   }
 
   .banner__applications {
@@ -94,38 +138,17 @@
     height: 300px;
     width: 500px;
   }
-}
-
-@media (min-width: @tablet-width) {
-  .banner {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 729px;
-    padding-top: 103px;
-    flex-direction: column;
-  }
-
-  .banner__head {
-    font-size: 40px;
-    line-height: normal;
-    margin-left: 78px;
-    width: 200px;
-  }
-
-  .banner__image {
-    position: absolute;
-    align-self: flex-end;
-  }
-
-  .banner__applications {
-    height: 250px;
-    width: 300px;
-    background-color: transparent;
-  }
 
   .banner__applications-list {
-    padding-top: 46px;
-    padding-left: 66px;
+    margin: 0;
+    padding-top: 67px;
+    justify-content: space-between;
+    padding-left: 47px;
+  }
+
+  .banner__applications-intro {
+    position: absolute;
+    bottom: 44px;
+    left: 155px;
   }
 }

@@ -36,6 +36,64 @@
   display: none;
 }
 
+@media (min-width: @tablet-width) {
+  .advantages__intro {
+    font-size: 40px;
+  }
+
+  .advantages__list {
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    padding-left: 329px;
+    text-align: left;
+    padding-top: 104px;
+  }
+
+  .advantages__list-add-timer {
+    position: absolute;
+    opacity: 0.2;
+    transform: translate(110px, 50px);
+  }
+
+  .advantages__list-add-24 {
+    font-size: 96px;
+    line-height: 149.5px;
+    color: #d22856;
+    font-weight: 700;
+    border: 15px solid #d22856;
+    border-radius: 50%;
+    width: 202px;
+    height: 202px;
+    position: relative;
+  }
+
+  .advantages__list-add {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__list-add-description {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: @blue;
+  }
+
+  .advantages__list-add-link {
+    font-size: 14px;
+    line-height: 24px;
+    color: #d22856;
+  }
+
+  .advantages__list-add-head {
+    color: black;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .advantages__list-time {
     display: flex;
@@ -48,6 +106,7 @@
     justify-content: space-between;
     padding-left: 163px;
     padding-right: 165px;
+    background-image: none;
   }
 
   .advantages__intro {
@@ -128,63 +187,5 @@
   .advantages__list-phone-smile {
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
     background-repeat: no-repeat;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .advantages__intro {
-    font-size: 40px;
-  }
-
-  .advantages__list {
-    background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-repeat: no-repeat;
-    padding-left: 329px;
-    text-align: left;
-    padding-top: 104px;
-  }
-
-  .advantages__list-add-timer {
-    position: absolute;
-    opacity: 0.2;
-    transform: translate(110px, 50px);
-  }
-
-  .advantages__list-add-24 {
-    font-size: 96px;
-    line-height: 149.5px;
-    color: #d22856;
-    font-weight: 700;
-    border: 15px solid #d22856;
-    border-radius: 50%;
-    width: 202px;
-    height: 202px;
-    position: relative;
-  }
-
-  .advantages__list-add {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .advantages__list-add-description {
-    font-size: 14px;
-    line-height: 24px;
-    text-align: left;
-    color: @blue;
-  }
-
-  .advantages__list-add-link {
-    font-size: 14px;
-    line-height: 24px;
-    color: #d22856;
-  }
-
-  .advantages__list-add-head {
-    color: black;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
   }
 }
