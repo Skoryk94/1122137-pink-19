@@ -21,6 +21,7 @@
   box-shadow: none;
   border: none;
   display: flex;
+  position: relative;
 }
 
 .publication__icon svg {
@@ -86,4 +87,21 @@
   position: absolute;
   top: 40px;
   transform: translate(-55px, 30px);
+}
+
+@media (min-width: @tablet-width) {
+  .publication {
+    display: flex;
+  }
+
+  .publication__functions {
+    flex-direction: column;
+  }
+
+  .publication__input {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 100px;
+  }
 }
