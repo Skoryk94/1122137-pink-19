@@ -1,5 +1,7 @@
 .app {
   background-color: #f2f2f2;
+  border: none;
+  margin-top: 44px;
 }
 
 .app__head {
@@ -7,9 +9,35 @@
   text-transform: uppercase;
   color: #d22856;
   line-height: 18px;
-  padding-top: 84px;
 }
 
 .app__list {
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .app {
+    order: 2;
+    background-color: white;
+    border: 2px solid rgba(28, 36, 45, 0.1);
+    margin-bottom: 62px;
+    padding-top: 53px;
+    padding-bottom: 56px;
+    padding-left: 59px;
+    margin-top: 63px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .app {
+    width: 50%;
+    padding-top: 56px;
+    padding-bottom: 57px;
+    padding-left: 75px;
+    order: 2;
+  }
+
+  .app__head {
+    width: 400px;
+  }
 }

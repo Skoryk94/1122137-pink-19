@@ -39,6 +39,7 @@
 @media (min-width: @tablet-width) {
   .advantages__intro {
     font-size: 40px;
+    line-height: normal;
   }
 
   .advantages__list {
@@ -47,12 +48,6 @@
     padding-left: 329px;
     text-align: left;
     padding-top: 104px;
-  }
-
-  .advantages__list-add-timer {
-    position: absolute;
-    opacity: 0.2;
-    transform: translate(110px, 50px);
   }
 
   .advantages__list-add-24 {
@@ -65,12 +60,24 @@
     width: 202px;
     height: 202px;
     position: relative;
+    transform: translate(20px, -40px);
+  }
+
+  .advantages-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin-left: 88px;
   }
 
   .advantages__list-add {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 238px, 276px;
+    margin-top: 59px;
   }
 
   .advantages__list-add-description {
@@ -91,10 +98,18 @@
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+    text-align: left;
+    width: 168px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .advantages {
+    background-color: #f2f2f2;
+    padding-top: 78px;
+    text-align: center;
+  }
+
   .advantages__list-time {
     display: flex;
     width: 525px;
@@ -104,8 +119,7 @@
   .advantages__list {
     display: flex;
     justify-content: space-between;
-    padding-left: 163px;
-    padding-right: 165px;
+    padding-left: 0;
     background-image: none;
   }
 
@@ -121,25 +135,21 @@
     line-height: 30px;
     width: 236px;
     padding-top: 361px;
+    text-align: center;
   }
 
   .advantages__list-add-head {
     font-size: 30px;
     line-height: 30px;
     width: 525px;
-    padding-right: 166px;
+    padding-top: 114px;
   }
 
   .advantages__list-description {
     font-size: 18px;
     line-height: 30px;
     width: 236px;
-  }
-
-  .advantages__list-add-timer {
-    position: absolute;
-    opacity: 0.2;
-    transform: translate(110px, 50px);
+    text-align: center;
   }
 
   .advantages__list-add-24 {
@@ -147,24 +157,31 @@
     line-height: 187px;
     color: #d22856;
     font-weight: 700;
-    border: 15px solid #d22856;
+    border: 17px solid #d22856;
     border-radius: 50%;
     width: 253px;
     height: 253px;
-    position: relative;
-    margin-left: 131px;
+    transform: translate(23px, 24px);
   }
 
   .advantages__list-add {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    background-image: url("../img/icon-timer.svg");
+    background-size: 298px, 2345px;
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .advantages-wrapper {
+    margin-left: 67px;
   }
 
   .advantages__list-add-description {
     font-size: 18px;
     line-height: 30px;
-    width: 525px;
+    width: 550px;
     text-align: left;
   }
 

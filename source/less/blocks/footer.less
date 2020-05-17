@@ -57,8 +57,11 @@
   color: @dark;
   font-weight: 300;
   margin-right: 15px;
-  display: inline-block;
-  transform: translateY(-10px);
+}
+
+.footer__html-academy {
+  display: flex;
+  justify-content: center;
 }
 
 .footer__links {
@@ -83,6 +86,14 @@
     justify-content: space-around;
     align-items: center;
   }
+
+  .footer__html-academy {
+    display: flex;
+  }
+
+  .footer__developer {
+    margin-right: 14px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -92,8 +103,14 @@
     padding-top: 0;
     display: flex;
     justify-content: space-between;
-    padding-left: 130px;
-    padding-right: 130px;
     align-items: center;
+  }
+
+  .footer__html-academy {
+    display: flex;
+  }
+
+  .footer__developer {
+    margin-right: 14px;
   }
 }

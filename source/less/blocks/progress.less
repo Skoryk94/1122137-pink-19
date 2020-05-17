@@ -1,6 +1,7 @@
 .progress {
   background-color: #f2f2f2;
   padding: 0;
+  border: none;
 }
 
 .progress__name {
@@ -16,4 +17,24 @@
 
 .progress__list {
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .progress {
+    order: 4;
+    background-color: white;
+    border: 2px solid rgba(28, 36, 45, 0.1);
+    margin-top: 62px;
+    margin-bottom: 69px;
+  }
+
+  .progress__name {
+    padding-top: 0;
+  }
+
+  .progress__list {
+    margin-top: 54px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+  }
 }
