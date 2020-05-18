@@ -1,3 +1,8 @@
+.user-contacts {
+  border: none;
+  margin-top: 41px;
+}
+
 .user-contacts__information {
   color: #d22856;
   font-size: 14px;
@@ -6,6 +11,11 @@
   padding-left: 22px;
   padding-bottom: 5px;
   padding-top: 15px;
+  width: 100%;
+}
+
+.user-contacts__container {
+  margin-bottom: 28px;
 }
 
 .user-contacts__form {
@@ -13,10 +23,56 @@
   line-height: 30px;
   color: @dark;
   height: 59px;
+  width: 100%;
 }
 
 .user-contacts__fields {
-  width: 276px;
+  width: 80%;
   padding-left: 20px;
   border: 2px solid #e5e5e5;
+}
+
+.user-contacts__head {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .user-contacts {
+    order: 3;
+    background-color: white;
+    border: 2px solid rgba(28, 36, 45, 0.1);
+    padding: 47px 60px 33px 60px;
+  }
+
+  .user-contacts__head {
+    display: block;
+    color: #d22856;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .user-contacts__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-contacts__information {
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-contacts {
+    padding: 44px 60px 20px 60px;
+  }
+
+  .user-contacts__form {
+    width: 50%;
+  }
+
+  .user-contacts__information {
+    width: 50%;
+  }
 }

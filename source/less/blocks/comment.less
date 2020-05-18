@@ -15,3 +15,143 @@
   padding-right: 34px;
   text-align: center;
 }
+
+.comment__user-description {
+  display: none;
+}
+
+.comment__quotes {
+  display: none;
+}
+
+.comment__button-left,
+.comment__button-right {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .comment {
+    display: flex;
+  }
+
+  .comment__div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comment__controls {
+    order: 4;
+  }
+
+  .comment__user-name {
+    order: 2;
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .comment__user-description {
+    display: flex;
+    justify-content: center;
+    color: #283645;
+    font-size: 14px;
+    line-height: 30px;
+    order: 3;
+    margin-top: 0;
+  }
+
+  .comment__description {
+    font-size: 18px;
+    line-height: 30px;
+    color: @blue;
+    margin-left: 22px;
+    margin-right: 21px;
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment {
+    display: flex;
+    justify-content: center;
+  }
+
+  .comment__user-name {
+    order: 2;
+    color: black;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 44px;
+  }
+
+  .comment__user-description {
+    display: flex;
+    justify-content: center;
+    color: #283645;
+    font-size: 18px;
+    line-height: 30px;
+    order: 3;
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+
+  .comment__description {
+    font-size: 18px;
+    line-height: 30px;
+    color: @blue;
+    width: 700px;
+    order: 1;
+    margin: 0 auto;
+    padding-top: 58px;
+  }
+
+  .comment__quotes {
+    display: flex;
+    margin-top: 72px;
+    opacity: 0.1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .comment__controls {
+    display: none;
+  }
+
+  .comment__button-left {
+    display: flex;
+    background-image: url("../img/left-arrow-svg.svg");
+    background-repeat: no-repeat;
+    border: none;
+    box-shadow: none;
+    width: 22px;
+    height: 41px;
+    background-color: transparent;
+    top: 50%;
+    position: absolute;
+  }
+
+  .comment__button-right {
+    display: flex;
+    background-image: url("../img/right-arrow-svg.svg");
+    background-repeat: no-repeat;
+    border: none;
+    box-shadow: none;
+    width: 22px;
+    height: 41px;
+    background-color: transparent;
+    position: absolute;
+    transform: scale(-1, 1);
+    right: 0;
+    top: 50%;
+  }
+
+  .comment__div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+}

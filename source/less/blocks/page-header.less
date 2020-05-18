@@ -1,10 +1,38 @@
 .page-header {
   background-color: @blue;
-  display: flex;
+  width: 100%;
 }
 
-.page-header__logo {
-  margin-left: 20px;
-  margin-top: 22px;
-  margin-bottom: 22px;
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 109px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+
+  .page-header__logo {
+    margin-left: 20px;
+    align-self: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    display: flex;
+  }
+
+  .page-header__logo {
+    margin-right: 150px;
+    align-self: center;
+  }
+
+  .page-header__container {
+    display: flex;
+  }
 }

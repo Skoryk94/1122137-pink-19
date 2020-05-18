@@ -6,15 +6,10 @@
   padding-left: 20px;
 }
 
-.package__list {
-  padding-top: 127px;
-}
-
 .package__package-name {
   background-color: @dark;
   font-weight: 700;
   color: white;
-  width: 276px;
   margin: 0;
 }
 
@@ -33,6 +28,14 @@
   text-align: start;
   padding-left: 22px;
   background-color: white;
+}
+
+.package__list {
+  width: 100%;
+}
+
+.package__container {
+  overflow: hidden;
 }
 
 .package__icon {
@@ -55,4 +58,52 @@
 
 .package__controls {
   padding-bottom: 51px;
+}
+
+.package__hide {
+  display: none;
+  background-color: white;
+}
+
+@media (min-width: @tablet-width) {
+  .package__function {
+    display: none;
+  }
+
+  .package__hide {
+    display: table-cell;
+  }
+
+  .package-th {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .package__list {
+    padding-bottom: 98px;
+    padding-top: 127px;
+    width: 100%;
+  }
+
+  .package__options {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .package__function {
+    display: none;
+  }
+
+  .package__hide {
+    display: table-cell;
+  }
+
+  .package-th {
+    background-color: transparent;
+  }
+
+  .package__package-name {
+    width: 100%;
+  }
 }

@@ -1,6 +1,10 @@
 .banner {
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
   background-color: @blue;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .banner__head {
@@ -9,4 +13,127 @@
   color: white;
   margin-top: 0;
   text-align: center;
+}
+
+.banner__applications {
+  padding-top: 28px;
+}
+
+.banner__applications-intro {
+  font-weight: 300;
+  color: white;
+  margin-top: 31px;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+.banner__applications-button {
+  width: 281px;
+  height: 55px;
+  border: solid 3px white;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__applications-button:hover {
+  background-color: white;
+  color: #d22856;
+}
+
+.banner__applications-button:active {
+  background-color: white;
+  color: #d22856;
+  opacity: 0.5;
+}
+
+.banner__applications-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 300px;
+  align-items: flex-end;
+  margin: auto;
+  padding-top: 32px;
+  padding-right: 58px;
+}
+
+@media (min-width: @tablet-width) {
+  .banner {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 729px;
+    padding-top: 103px;
+    flex-direction: column;
+  }
+
+  .banner__head {
+    font-size: 40px;
+    line-height: normal;
+    margin-left: 58px;
+    width: 200px;
+  }
+
+  .banner__image {
+    position: absolute;
+    align-self: flex-end;
+    right: 90px;
+  }
+
+  .banner__applications {
+    height: 250px;
+    width: 300px;
+    background-color: transparent;
+  }
+
+  .banner__applications-list {
+    padding-top: 46px;
+    padding-left: 66px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 853px;
+    padding-top: 110px;
+    flex-direction: column;
+  }
+
+  .banner__head {
+    font-size: 50px;
+    width: 240px;
+    line-height: normal;
+    margin-left: 36px;
+    text-align: center;
+  }
+
+  .banner__image {
+    right: 390px;
+    position: absolute;
+  }
+
+  .banner__applications {
+    background-color: transparent;
+    width: 500px;
+  }
+
+  .banner__applications-list {
+    margin: 0;
+    padding-top: 67px;
+    justify-content: space-between;
+    padding-left: 47px;
+  }
+
+  .banner__applications-intro {
+    width: 295px;
+  }
 }

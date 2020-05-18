@@ -12,3 +12,32 @@
   margin-left: 20px;
   border-radius: 3px;
 }
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .form__button {
+    order: 6;
+    margin-right: 140px;
+  }
+
+  .form__necessarily-pink {
+    order: 7;
+  }
+
+  .form__button-container {
+    display: flex;
+    margin-top: 71px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__necessarily-pink {
+    order: 7;
+    margin-left: auto;
+  }
+}

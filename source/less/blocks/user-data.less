@@ -1,5 +1,5 @@
 .user-data {
-  display: flex;
+  border: none;
 }
 
 .user-data__information {
@@ -20,7 +20,42 @@
 }
 
 .user-data__fields {
-  width: 276px;
+  width: 95%;
   padding-left: 20px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid rgba(28, 36, 45, 0.1);
+}
+
+@media (min-width: @tablet-width) {
+  .user-data__container {
+    display: flex;
+    padding-bottom: 56px;
+  }
+
+  .user-data__information {
+    margin-right: 22px;
+    align-self: center;
+  }
+
+  .user-data {
+    margin-bottom: 50px;
+  }
+
+  .user-data__fields {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-data__container {
+    display: flex;
+  }
+
+  .user-data__information {
+    align-self: center;
+  }
+
+  .user-data {
+    margin-bottom: 50px;
+    width: 50%;
+  }
 }
